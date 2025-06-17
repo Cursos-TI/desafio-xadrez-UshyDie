@@ -59,7 +59,7 @@ Direita
 2. Compile o programa:
 
    ```bash
-   gcc -o supertrunfo supertrunfo.c
+   gcc -o xadrez.c
    ```
 3. Execute:
 
