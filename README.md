@@ -64,7 +64,7 @@ Direita
 3. Execute:
 
    ```bash
-   ./supertrunfo
+   ./xadrez
    ```
 
 No GitHub Codespaces ou VS Code, podes usar o terminal integrado para esses passos.
