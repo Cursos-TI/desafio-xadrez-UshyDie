@@ -24,31 +24,27 @@ void moverRainha(int casas){
 
 void moverBispo(int casas) {
     if(casas > 0) {
-
-        for (int i = 0; i < 1; i++) // Loop que faz a movimentação da peça pela linha verticalmente
-       {
-           printf("Cima "); // Simula a movimentação da peça no tabuleiro. 
-
-           for (int i = 0; i < 1; i++) // Loop que faz a movimentação da peça pela linha verticalmente
-           {
-            printf("Direita"); // Simula a movimentação da peça no tabuleiro. 
-           }
+// Loop que faz a movimentação da peça pela linha verticalmente
+        for (int i = 0; i < 1; i++) {
+            printf("Cima "); // Simula a movimentação da peça no tabuleiro. 
+                // Loop que faz a movimentação da peça pela linha verticalmente
+            for (int i = 0; i < 1; i++) {
+                    printf("Direita "); // Simula a movimentação da peça no tabuleiro. 
+            }
+        }
+        printf("\n"); 
+        moverBispo(casas - 1);
             
-           
-       }
-      printf("\n"); 
-      moverBispo(casas - 1);
-   }
+    }
 }
 
 int main() {
     
-    // Declarando variáveis constantes para representar o número de casas que cada peça pode se mover.
+    // Declarando variáveis para representar o número de casas que cada peça pode se mover.
     int casas_Bispo = 5;
     int casas_Torre = 5;
     int casas_Rainha = 8;
     int casas_Cavalo = 1;
-    
     
     //  Movimentação das Peças
 
@@ -67,7 +63,6 @@ int main() {
 
     // Estrutura recursiva para simular a movimentação da Torre.
     moverTorre(casas_Torre); // Função recursiva para a Torre
-   
     printf("\n");
 
     // Implementação de Movimentação da Rainha 8 casas para a esquerda.
@@ -93,9 +88,7 @@ int main() {
         }
             
     }
-
-        
-   
-
     return 0;
 }
+
+
